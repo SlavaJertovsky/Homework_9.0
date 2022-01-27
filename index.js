@@ -1,13 +1,9 @@
-const cities = ['moscow', 'london', 'berlin', 'porto'];
 
-function get(arr, index) {
-  if (index > arr.length) {
-      return 'null'
-  }  else if (index < 0){
-      return 'oops'
-    
 
-}  else return arr[index]
+  function insertSpaces(string) {
+    string = string.replace(/([a-z])([A-Z])/g, '$1 $2');
+
+    return string;
 }
 
-console.log(get(cities,3,))
+console.log(insertSpaces('myBook'));
